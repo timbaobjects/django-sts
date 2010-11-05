@@ -13,7 +13,7 @@ like phishing or session hijacking involving a compromised router.
 By explicitly telling browsers to always contact a given server over 
 HTTPS, such clever attacks can be limited.
 
-For more information, (http://tools.ietf.org/html/draft-hodges-strict-transport-sec-02) and (http://dev.chromium.org/sts)
+For more information, please visit http://tools.ietf.org/html/draft-hodges-strict-transport-sec-02 and http://dev.chromium.org/sts
 
 This middleware is built to automatically include the STS headers in 
 outgoing responses from a django-based web application.
@@ -35,10 +35,10 @@ to cache the setting to always use HTTPS for this web app. The value is
 specified in number of seconds.
 
 > Example:
->   STS_MAXAGE = 60 * 60 * 24 * 30 # specifies a maximum age of 30 days
+> STS_MAXAGE = 60 * 60 * 24 * 30 # specifies a maximum age of 30 days
 
 **STS_INCLUDESUBDOMAINS**: This setting specifies whether the feature also 
 applies to subdomains under this domain. The value is boolean
 
 > Example:
->   STS_INCLUDESUBDOMAINS = True
+> STS_INCLUDESUBDOMAINS = True
