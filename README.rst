@@ -34,11 +34,11 @@ the values sent out in the headers.
 to cache the setting to always use HTTPS for this web app. The value is 
 specified in number of seconds.
 
-> Example:
-> STS_MAXAGE = 60 * 60 * 24 * 30 # specifies a maximum age of 30 days
+Example:
+  STS_MAXAGE = 60 * 60 * 24 * 30 # specifies a maximum age of 30 days
 
 **STS_INCLUDESUBDOMAINS**: This setting specifies whether the feature also 
 applies to subdomains under this domain. The value is boolean
 
-> Example:
-> STS_INCLUDESUBDOMAINS = True
+Example:
+  STS_INCLUDESUBDOMAINS = True
