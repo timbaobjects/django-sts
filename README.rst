@@ -21,11 +21,11 @@ outgoing responses from a django-based web application.
 To enable this middleware, simply include it in you MIDDLEWARE_CLASSES 
 setting in the project settings after the standard middleware:
 
-    MIDDLEWARE_CLASSES = (
-        ...
-        'django-sts.STSMiddleware',
-        ...
-    )
+	MIDDLEWARE_CLASSES = (
+		...
+		'django-sts.STSMiddleware',
+		...
+	)
 
 The following parameters in your settings file can be used to change 
 the values sent out in the headers.
@@ -35,10 +35,10 @@ to cache the setting to always use HTTPS for this web app. The value is
 specified in number of seconds.
 
 Example:
-  STS_MAXAGE = 60 * 60 * 24 * 30 # specifies a maximum age of 30 days
+	STS_MAXAGE = 60 * 60 * 24 * 30 # specifies a maximum age of 30 days
 
 **STS_INCLUDESUBDOMAINS**: This setting specifies whether the feature also 
 applies to subdomains under this domain. The value is boolean
 
 Example:
-  STS_INCLUDESUBDOMAINS = True
+	STS_INCLUDESUBDOMAINS = True
